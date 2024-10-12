@@ -1,8 +1,6 @@
 import type { Metadata } from "next"
 
 
-interface Props {}
-
 export const metadata: Metadata = {
     title: "Learn 📚",
     description: "Una usina de ideas, seguimiento de tutoriales y desarrollo de aplicaciones",
