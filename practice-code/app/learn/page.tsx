@@ -1,4 +1,3 @@
-import { NextPage } from 'next'
 import type { Metadata } from "next"
 
 
@@ -9,8 +8,8 @@ export const metadata: Metadata = {
     description: "Una usina de ideas, seguimiento de tutoriales y desarrollo de aplicaciones",
   };
 
-const Page: NextPage<Props> = ({}) => {
-  return <div>
+  export default function Page() {
+  return (<div>
 
     <div>Primeros Pasos...</div>
     <div className='text-cyan-300'>
@@ -20,6 +19,6 @@ const Page: NextPage<Props> = ({}) => {
     Copiar y pegar desde <a className="text-sky-500 hover:text-sky-600" href={"https://lucide.dev/"} target="_blank" rel="noopener noreferrer">lucide react</a> en el title del Metadata.!!!
     </div>
   </div>
+  );
 }
 
-export default Page
