@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Header() {
     return (
           
-    <header className="bg-[#1b1b11f] w-full">
+    <header className="bg-slate-200 w-full">
         <div className="flex items-center justify-between mx-auto max-w-6xl px-10 py-4">
             <div className="flex items-center">
                 <Aperture  className="px-1" size={36}/>
