@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export default function LandingPage() {
     return (
           
@@ -15,7 +17,9 @@ export default function LandingPage() {
                  ¿Cansado de buscar entre páginas y páginas de PDF? ¡Ahora puedes chatear directamente con tus documentos! Carga cualquier PDF y obtén respuestas instantáneas a tus preguntas.
                  </p>
                  {/* CTA - Call to action */}
-                 
+                 <div className="p-16">
+                    <Button variant="destructive">Ingresar</Button>
+                 </div>
             </div> 
 
             {/* Right */}
