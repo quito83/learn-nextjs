@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="pl-8">
-      <div className="text-black text-4xl">Primeros Pasos...</div>
+      <div className="text-black text-4xl">👀 Primeros Pasos...</div>
       <br />
       <div className="text-slate-600">
-        Para incluir emojis en el titulo: Copiar y pegar desde{" "}
+        A) Para incluir emojis 😀 en el titulo: Copiar y pegar desde{" "}
         <a
           className="text-sky-500 hover:text-sky-600"
           href={"https://emojipedia.org/"}
@@ -21,11 +21,11 @@ export default function Page() {
         >
           emojipedia.org
         </a>{" "}
-        directamente en el title del Metadata.!!!
+        directamente en el title del Metadata ❗❗❗
       </div>
       <br />
       <div className="text-slate-600">
-        Para incluir iconos en formato svg: Instalar{" "}
+        B) Para incluir iconos en formato svg: Instalar{" "}
         <a
           className="text-sky-500 hover:text-sky-600"
           href={"https://lucide.dev/"}
@@ -34,27 +34,50 @@ export default function Page() {
         >
           lucide react
         </a>{" "}
-        como indica en el sitio <code> pnpm install lucide-react </code> y se
+        como indica en el sitio{" "}
+        <code className="language-js"> pnpm install lucide-react </code> y se
         importan los iconos como como un componente:
+        <br />
         <pre>
-          <code>
-            {`
-        import { Anvil } from 'lucide-react';
+          <code>{`
+import { Aperture } from 'lucide-react';
 
-        const App = () => {
-          return (
-            < Anvil />
-          );
-        };
+  const App = () => {
+    return (
+      <Aperture />
+    );
+  };
 
-        export default App;
-`}
-          </code>
+export default App;
+
+          `}</code>
         </pre>
+        <p className="flex">
+          O podes copiar el codigo svg y pegarlo directamente:
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-binoculars"
+          >
+            <path d="M10 10h4" />
+            <path d="M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3" />
+            <path d="M20 21a2 2 0 0 0 2-2v-3.851c0-1.39-2-2.962-2-4.829V8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2z" />
+            <path d="M 22 16 L 2 16" />
+            <path d="M4 21a2 2 0 0 1-2-2v-3.851c0-1.39 2-2.962 2-4.829V8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2z" />
+            <path d="M9 7V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3" />
+          </svg>
+        </p>
       </div>
       <br />
       <div className="text-slate-600">
-        Usamos este sitio para incorporar componentes UI{" "}
+        C) Usamos este sitio para incorporar componentes UI{" "}
         <a
           className="text-sky-500 hover:text-sky-600"
           href={"https://ui.shadcn.com/"}
@@ -65,6 +88,7 @@ export default function Page() {
         </a>
         . Vamos a la parte de Docs y seguimos los pasos que nos indican alli!!!
       </div>
+      <p>🍎</p>
     </div>
   );
 }
