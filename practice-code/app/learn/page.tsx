@@ -12,7 +12,7 @@ export default function Page() {
       <div className="text-black text-4xl">👀 Primeros Pasos...</div>
       <br />
       <div className="text-slate-600">
-        A) Para incluir emojis 😀 en el titulo: Copiar y pegar desde{" "}
+        A- Para incluir emojis 😀 en el titulo: Copiar y pegar desde{" "}
         <a
           className="text-sky-500 hover:text-sky-600"
           href={"https://emojipedia.org/"}
@@ -25,7 +25,7 @@ export default function Page() {
       </div>
       <br />
       <div className="text-slate-600">
-        B) Para incluir iconos en formato svg: Instalar{" "}
+        B- Para incluir iconos en formato svg: Instalar{" "}
         <a
           className="text-sky-500 hover:text-sky-600"
           href={"https://lucide.dev/"}
@@ -64,7 +64,7 @@ export default App;
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-binoculars"
+            className="lucide lucide-binoculars"
           >
             <path d="M10 10h4" />
             <path d="M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3" />
@@ -77,7 +77,7 @@ export default App;
       </div>
       <br />
       <div className="text-slate-600">
-        C) Usamos este sitio para incorporar componentes UI{" "}
+        C- Usamos este sitio para incorporar componentes UI{" "}
         <a
           className="text-sky-500 hover:text-sky-600"
           href={"https://ui.shadcn.com/"}
