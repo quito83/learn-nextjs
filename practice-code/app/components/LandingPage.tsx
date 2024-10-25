@@ -8,7 +8,7 @@ export default function LandingPage() {
         <div className="section-container flex flex-col text-white md:flex-row items-center">
           {/* Left */}
           <div className="flex flex-col mb-32 space-y-12 text-center md:w-1/2">
-            {/* Hader */}
+            {/* Header */}
             <h1 className="text-4xl md:text-5xl md:leading-tight">
               Chatea con cualquier documento PDF
             </h1>
@@ -88,6 +88,10 @@ export default function LandingPage() {
         <div className="grid justify-items-center w-full mx-auto px-4 mt-4 mb-12">
           <Button variant="destructive">Registrate Gratis</Button>
         </div>
+      </section>
+      {/* Footer*/}
+      <section className="section-container mt-12">
+        <footer>Chatear con PDF</footer>
       </section>
     </>
   );
