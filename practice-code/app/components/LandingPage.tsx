@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { BookOpenCheck } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -91,7 +92,15 @@ export default function LandingPage() {
       </section>
       {/* Footer*/}
       <section className="section-container mt-12">
-        <footer>Chatear con PDF</footer>
+        <footer className="bg-slate-100">
+          <hr className="border-blue-500 " />
+          <div className="flex items-strat justify-between px-1 py-2">
+            <BookOpenCheck />
+            <span>Hecho con ❤️ en Argentina</span>
+            <span>QuitoApps</span>
+          </div>
+          <hr className="border-blue-500" />
+        </footer>
       </section>
     </>
   );
