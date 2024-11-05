@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { File, Pencil, Trash2, Upload } from "lucide-react";
+import UploadPDF from "@/app/components/UploadPDF";
 
 export const metadata: Metadata = {
   title: "Documents 🔎",
@@ -27,9 +28,7 @@ export default function Documents() {
         <div className="flex  items-center justify-between mb-4">
           <h1> Documents </h1>
           <br />
-          <Button>
-            <Upload className="w-4 h-4 mr-2"></Upload>Cargar
-          </Button>
+          <UploadPDF></UploadPDF>
         </div>
         <div className="bg-white rounded shadow w-full overflow-x-scroll">
           <table className="min-w-full">
