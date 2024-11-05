@@ -10,6 +10,8 @@ export const metadata: Metadata = {
 
 export default function Documents() {
   const documents = [
+    { fileName: "Nene.pdf", fileSize: "1 MB", createdAt: "7 sec ago" },
+    { fileName: "Pa.pdf", fileSize: "2 MB", createdAt: "1 century ago" },
     { fileName: "User_Manual.pdf", fileSize: "1 MB", createdAt: "2 days ago" },
     { fileName: "Pepe.pdf", fileSize: "8 MB", createdAt: "7 days ago" },
     {
