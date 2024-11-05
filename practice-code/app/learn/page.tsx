@@ -106,6 +106,20 @@ export default App;
         </a>
         . Vamos a la parte de Docs y seguimos los pasos que nos indican alli!!!
       </div>
+      <br />
+      <div className="text-slate-600">
+        D- Usamos este sitio para incluir un "drop zone" para la carga de
+        documentos{" "}
+        <a
+          className="text-sky-500 hover:text-sky-600"
+          href={"https://react-dropzone.js.org/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          react-dropzone
+        </a>
+        .
+      </div>
       <p>🍎</p>
     </div>
   );

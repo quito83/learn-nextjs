@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -10,9 +12,34 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Upload } from "lucide-react";
+import { Upload, UploadCloud } from "lucide-react";
+import { useCallback } from "react";
+import { useDropzone } from "react-dropzone";
 
 const UploadPDF = () => {
+  const onDrop = useCallback((acceptedFiles: File[]) => {
+    // Do something with the files
+    const pdfFile = acceptedFiles[0];
+
+    if (!pdfFile) {
+      alert("Por favor solo cargar archivos PDF");
+      return;
+    }
+
+    if (pdfFile.size > 10 * 1024 * 1024) {
+      //bigger than 10 MB
+      alert("Por favor solo cargar archivos menores a 10 MB");
+      return;
+    }
+
+    console.log(pdfFile);
+  }, []);
+  const { getRootProps, getInputProps } = useDropzone({
+    accept: { "application/pdf": [".pdf"] },
+    multiple: false,
+    onDrop,
+  });
+
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -26,6 +53,16 @@ const UploadPDF = () => {
         </DialogHeader>
 
         <form className="space-y-6">
+          <div
+            {...getRootProps({
+              className:
+                "border-dashed border-2 rounded-md cursor-pointer bg-gray-50 py-8 flex justify-center items-center flex-col",
+            })}
+          >
+            <input name="file" {...getInputProps()} />
+            <UploadCloud className="w-10 h-10 text-[#ff612f]"></UploadCloud>
+            <p>Arrastrar el archivo aqui ...</p>
+          </div>
           <div className="flex items-center">
             <div className="flex-grow border-t border-gray-200"> </div>
             <span className="flex-shrink mx-4 uppercase text-gray-600 text-xs">
