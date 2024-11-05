@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Learn 📚",
@@ -10,6 +11,23 @@ export default function Page() {
   return (
     <div className="pl-8">
       <div className="text-black text-4xl">👀 Primeros Pasos...</div>
+      <br />
+
+      <div>
+        Siguiendo el tutorial de{" "}
+        <a
+          className="text-sky-500 hover:text-sky-600"
+          href={"https://code4startup.com/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Code 4 Startup
+        </a>{" "}
+        para implementar AI en mi sitio web{" "}
+        <Link href="/PDF" className="text-sky-500 hover:text-sky-600">
+          Chatear con PDFs
+        </Link>
+      </div>
       <br />
       <div className="text-slate-600">
         A- Para incluir emojis 😀 en el titulo: Copiar y pegar desde{" "}
