@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="pl-8">
-      <div className="text-black text-4xl">👀 Primeros Pasos...</div>
+      <div className="text-black text-4xl">📚 Primeros Pasos.</div>
       <br />
 
       <div>
@@ -28,6 +28,8 @@ export default function Page() {
           Chatear con PDFs
         </Link>
       </div>
+      <br />
+      <div className="text-black text-4xl">👀 Consejos:</div>
       <br />
       <div className="text-slate-600">
         A- Para incluir emojis 😀 en el titulo: Copiar y pegar desde{" "}
