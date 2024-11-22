@@ -26,6 +26,13 @@ export default function Page() {
         para implementar AI en mi sitio web{" "}
         <Link href="/PDF" className="text-sky-500 hover:text-sky-600">
           Chatear con PDFs
+        </Link>{" "}
+        y{" "}
+        <Link
+          href="/learn/rembackground/"
+          className="text-sky-500 hover:text-sky-600"
+        >
+          Remover Fondo
         </Link>
       </div>
       <br />
