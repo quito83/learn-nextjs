@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { File, Pencil, Trash2, Upload } from "lucide-react";
+import { File, Pencil, Trash2 } from "lucide-react";
 import UploadPDF from "@/app/components/UploadPDF";
 
 export const metadata: Metadata = {
